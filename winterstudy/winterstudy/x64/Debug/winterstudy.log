@@ -1,0 +1,4 @@
+﻿  game.cpp
+C:\Users\user\OneDrive\문서\GitHub\winterstudy\winterstudy\winterstudy\game.cpp(13,19): warning C4305: '=': 'int'에서 'char'(으)로 잘립니다.
+C:\Users\user\OneDrive\문서\GitHub\winterstudy\winterstudy\winterstudy\game.cpp(13,19): warning C4309: '=': 상수 값이 잘립니다.
+  winterstudy.vcxproj -> C:\Users\user\OneDrive\문서\GitHub\winterstudy\winterstudy\x64\Debug\winterstudy.exe
