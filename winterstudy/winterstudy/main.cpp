@@ -1,14 +1,17 @@
 #include "Common.h"
 #include "Player.h"
 #include "GameInstance.h"
+#include "Timer.h"
 
 int main()
 {
 	CGameInstance* Instance = new CGameInstance;
 	Player* player = new Player;
+	Timer* timer = new Timer;
 
 	Instance->Init();
 	player->Init();
+	timer->Init();
 
 	while (true)
 	{
@@ -16,6 +19,8 @@ int main()
 		Instance->Render();
 		player->Update();
 		player->Render();
+		timer->Update();
+		timer->Render();
 		Sleep(100);
 
 		if (Instance->IsNeedDestroy()) break;

@@ -36,8 +36,6 @@ void CGameInstance::Render()
 
 	// Player ±×¸®±â
 
-	//int PlayerX = 5;
-	//int PlayerY = 5;
 
 	int BoardY = 15;
 	int BoardX = 15;

@@ -49,11 +49,11 @@ void Player::Update()
 			cout << "¡Ú";
 		}
 		else if (position == 3) {
-			gotoxy(Playerx * 2-1, Playery);
+			gotoxy(Playerx * 2-2, Playery);
 			cout << "¡Ú";
 		}
 		else if (position == 4) {
-			gotoxy(Playerx * 2 + 1, Playery);
+			gotoxy(Playerx * 2 + 2, Playery);
 			cout << "¡Ú";
 		}
 		break;
