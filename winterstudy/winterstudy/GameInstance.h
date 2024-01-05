@@ -12,9 +12,8 @@ public:
 	void Update();
 	void Render();
 	void Destroy();
-
-	bool IsNeedDestroy() { return key == Key_ESC; };
-
+	//bool IsNeedDestroy() { return key == Key_ESC; };
+	
 private:
 	int key = 0;
 	//int Playerx = 5;

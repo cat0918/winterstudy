@@ -57,6 +57,9 @@ void Player::Update()
 			cout << "¡Ú";
 		}
 		break;
+	case 'p':
+		
+		break;
 	default:
 		break;
 	}
@@ -71,4 +74,9 @@ void Player::Render()
 void Player::Destroy()
 {
 }
+
+
+
+
+
 

@@ -19,7 +19,8 @@ void CGameInstance::Init()
 void CGameInstance::Update()
 {
 	//std::cout << "Update CGameInstance" << std::endl;
-
+	
+	
 	
 }
 
