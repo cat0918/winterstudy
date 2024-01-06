@@ -4,22 +4,32 @@
 #include "Timer.h"
 #include "Monster.h"
 
+#include <vector>
 int main()
 {
 	CGameInstance* Instance = new CGameInstance;
 	Player* player = new Player;
 	Timer* timer = new Timer;
-	Monster* monster = new Monster;
-
+	vector<Monster*> monsters;
+	for (int i = 0; i < 3; i++) {
+		monsters.emplace_back(new Monster());
+	}
 	Instance->Init();
 	player->Init();
 	timer->Init();
+	for (auto &i : monsters) {
+		i->Init();
+	}
 	
 	while (true)
 	{
 		Instance->Update();
 		Instance->Render();
-		
+		for (auto& i : monsters) {
+
+			i->Update();
+			i->Render();
+		}
 		player->Update();
 		player->Render();
 		timer->Update();
