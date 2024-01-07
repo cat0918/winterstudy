@@ -3,12 +3,12 @@
 #include "GameInstance.h"
 #include "Timer.h"
 #include "Monster.h"
-
 #include <vector>
+Player *Player::player;
 int main()
 {
 	CGameInstance* Instance = new CGameInstance;
-	Player* player = new Player;
+	Player* player = Player::Getplayer();
 	Timer* timer = new Timer;
 	vector<Monster*> monsters;
 	for (int i = 0; i < 3; i++) {
@@ -36,8 +36,6 @@ int main()
 		timer->Render();
 		
 		Sleep(100);
-
-		
 	}
 
 	Instance->Destroy();

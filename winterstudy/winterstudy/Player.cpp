@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "common.h"
+
 Player::Player()
 {
 }
@@ -44,6 +45,7 @@ void Player::Update()
 		if (position == 1) {
 			gotoxy(Playerx * 2, Playery -1);
 			cout << "¡Ú";
+			
 		}
 		else if (position == 2) {
 			gotoxy(Playerx * 2, Playery + 1);
@@ -74,6 +76,16 @@ void Player::Render()
 
 void Player::Destroy()
 {
+}
+
+int Player::getPlayerx()
+{
+	return Playerx;
+}
+
+int Player::getPlayery()
+{
+	return Playery;
 }
 
 
