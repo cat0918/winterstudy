@@ -21,5 +21,7 @@ private:
 	int shift = 0;
 	int count = 0;
 	int hp=0;
+	int playerattack = 0;
+	int playerposition = 0;
 };
 

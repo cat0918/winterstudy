@@ -26,9 +26,10 @@ int main()
 		Instance->Update();
 		Instance->Render();
 		for (auto& i : monsters) {
-
 			i->Update();
-			i->Render();
+			if (i->id != 0) {
+				i->Render();
+			}
 		}
 		player->Update();
 		player->Render();

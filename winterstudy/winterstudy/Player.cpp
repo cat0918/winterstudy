@@ -42,6 +42,7 @@ void Player::Update()
 	case 'e':
 		break;
 	case 'j': //°ø°Ý
+		attack = 1;
 		if (position == 1) {
 			gotoxy(Playerx * 2, Playery -1);
 			cout << "¡Ú";
@@ -64,6 +65,7 @@ void Player::Update()
 		
 		break;
 	default:
+		attack = 0;
 		break;
 	}
 }
@@ -86,6 +88,16 @@ int Player::getPlayerx()
 int Player::getPlayery()
 {
 	return Playery;
+}
+
+int Player::ifAttack()
+{
+	return attack;
+}
+
+int Player::getPosition()
+{
+	return position;
 }
 
 

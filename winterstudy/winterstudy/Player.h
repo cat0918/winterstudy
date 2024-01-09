@@ -18,6 +18,8 @@ public:
 	void Destroy();
 	int getPlayerx();
 	int getPlayery();
+	int ifAttack();
+	int getPosition();
 	
 private:
 	int Playerx = 5;
@@ -25,6 +27,7 @@ private:
 	int key = 0;
 	int position = 0;
 	int stop = 0;
+	int attack = 0;
 	static Player* player;
 };
 
